@@ -12,6 +12,7 @@
 		A4E409CE20A9F08E001E5B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E409CC20A9F08E001E5B57 /* Main.storyboard */; };
 		A4E409D020A9F08E001E5B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E409CF20A9F08E001E5B57 /* Assets.xcassets */; };
 		A4E409D320A9F08E001E5B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E409D120A9F08E001E5B57 /* LaunchScreen.storyboard */; };
+		A4E409E220A9F2B9001E5B57 /* SecureCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E409E120A9F2B9001E5B57 /* SecureCodeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A4E409CF20A9F08E001E5B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E409D220A9F08E001E5B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E409D420A9F08E001E5B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E409E120A9F2B9001E5B57 /* SecureCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCodeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +115,10 @@
 		A4E409E020A9F0F4001E5B57 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A4E409CC20A9F08E001E5B57 /* Main.storyboard */,
 				A4E409C820A9F08E001E5B57 /* AppDelegate.swift */,
 				A4E409CA20A9F08E001E5B57 /* ViewController.swift */,
-				A4E409CC20A9F08E001E5B57 /* Main.storyboard */,
+				A4E409E120A9F2B9001E5B57 /* SecureCodeTextField.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E409CB20A9F08E001E5B57 /* ViewController.swift in Sources */,
+				A4E409E220A9F2B9001E5B57 /* SecureCodeTextField.swift in Sources */,
 				A4E409C920A9F08E001E5B57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT63RCWV2C;
-				INFOPLIST_FILE = SingleDigitTextFields/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SingleDigitTextFields/Shared/Resources/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaimramlan.SingleDigitTextFields;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT63RCWV2C;
-				INFOPLIST_FILE = SingleDigitTextFields/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SingleDigitTextFields/Shared/Resources/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaimramlan.SingleDigitTextFields;
 				PRODUCT_NAME = "$(TARGET_NAME)";

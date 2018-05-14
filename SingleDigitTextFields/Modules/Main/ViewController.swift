@@ -9,17 +9,69 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+    
+    // MARK: View Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTextFields()
+        setupViewTapToDismiss()
+    }
+    
+    // MARK: TextFields
+    
+    @IBOutlet var firstTF: SecureCodeTextField!
+    @IBOutlet var secondTF: SecureCodeTextField!
+    @IBOutlet var thirdTF: SecureCodeTextField!
+    @IBOutlet var fourthTF: SecureCodeTextField!
+    var textFields: [SecureCodeTextField] = []
+    func setupTextFields() {
+        textFields = [firstTF, secondTF, thirdTF, fourthTF]
+        
+        let minIndex = 0
+        let maxIndex = textFields.count - 1
+        
+        for index in minIndex...maxIndex {
+            if index != minIndex {
+                textFields[index].previousTextField = textFields[index - 1]
+            }
+            
+            if index != maxIndex {
+                textFields[index].nextTextField = textFields[index + 1]
+            }
+            
+            textFields[index].moveToNextFromCurrentTextFieldCompletion = moveToNextFromCurrentTextFieldCompletion(_:)
+        }
+    }
+    
+    func isFilledAllTextFields() -> Bool {
+        for textField in textFields {
+            if textField.text == nil || textField.text?.count != 1 {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    // MARK: Keyboard Dismiss
+    
+    func setupViewTapToDismiss() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
+// MARK: SecureCodeTextField Completions
+
+extension ViewController {
+    func moveToNextFromCurrentTextFieldCompletion(_ textField: UITextField) {
+        if textField.isEqual(thirdTF) && isFilledAllTextFields() {
+            view.endEditing(true)
+        }
+    }
+}
