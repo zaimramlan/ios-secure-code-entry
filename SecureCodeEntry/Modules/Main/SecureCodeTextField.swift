@@ -15,6 +15,7 @@ class SecureCodeTextField: UITextField {
     
     var previousTextField: UITextField?
     var nextTextField: UITextField?
+    var textFieldDidEndEditingCompletion: ((UITextField) -> Void)?
     var moveToNextFromCurrentTextFieldCompletion: ((UITextField) -> Void)?
     
     // MARK: Object Lifecycle
@@ -60,6 +61,10 @@ extension SecureCodeTextField: UITextFieldDelegate {
         }
         
         return false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textFieldDidEndEditingCompletion?(textField)
     }
 }
 
