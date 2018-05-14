@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecureCodeEntry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-bq-DaE">
+                                <rect key="frame" x="100" y="308" width="175" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1e-02-HeW" customClass="SecureCodeTextField" customModule="SecureCodeEntry" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="4h6-DX-8sT"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-da-kNl" customClass="SecureCodeTextField" customModule="SecureCodeEntry" customModuleProvider="target">
+                                        <rect key="frame" x="55" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="gTF-Ch-nhc"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-FI-eQg" customClass="SecureCodeTextField" customModule="SecureCodeEntry" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="q76-ZN-R8j"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brp-Gi-Etx" customClass="SecureCodeTextField" customModule="SecureCodeEntry" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="BtA-Em-2tG"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="brp-Gi-Etx" secondAttribute="trailing" constant="20" id="KhR-rq-Qbc"/>
+                                    <constraint firstItem="CyW-da-kNl" firstAttribute="centerY" secondItem="Y9P-bq-DaE" secondAttribute="centerY" id="L8e-Sl-aKy"/>
+                                    <constraint firstItem="S1e-02-HeW" firstAttribute="centerY" secondItem="Y9P-bq-DaE" secondAttribute="centerY" id="Lsj-WU-Xvf"/>
+                                    <constraint firstItem="S1e-02-HeW" firstAttribute="leading" secondItem="Y9P-bq-DaE" secondAttribute="leading" constant="20" id="Vji-0v-A1U"/>
+                                    <constraint firstItem="CyW-da-kNl" firstAttribute="leading" secondItem="S1e-02-HeW" secondAttribute="trailing" constant="5" id="WeZ-Xj-WPc"/>
+                                    <constraint firstItem="AvD-FI-eQg" firstAttribute="leading" secondItem="CyW-da-kNl" secondAttribute="trailing" constant="5" id="WjI-Nt-5ds"/>
+                                    <constraint firstItem="AvD-FI-eQg" firstAttribute="centerY" secondItem="Y9P-bq-DaE" secondAttribute="centerY" id="YCs-qd-qeQ"/>
+                                    <constraint firstItem="brp-Gi-Etx" firstAttribute="centerY" secondItem="Y9P-bq-DaE" secondAttribute="centerY" id="cI7-kA-8vC"/>
+                                    <constraint firstItem="brp-Gi-Etx" firstAttribute="leading" secondItem="AvD-FI-eQg" secondAttribute="trailing" constant="5" id="cvc-VQ-J2h"/>
+                                    <constraint firstAttribute="height" constant="50" id="fNo-Ey-S2R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your 4 digit secure code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGd-c8-2Sh">
+                                <rect key="frame" x="73.5" y="268" width="228" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFp-d6-bRz">
+                                <rect key="frame" x="155.5" y="378" width="64" height="30"/>
+                                <state key="normal" title="Set Code"/>
+                                <connections>
+                                    <action selector="setCodeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1w9-Kc-c1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-ms-5my">
+                                <rect key="frame" x="147" y="408" width="80" height="30"/>
+                                <state key="normal" title="Verify Code"/>
+                                <connections>
+                                    <action selector="verifyCodeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVU-r4-1gr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y9P-bq-DaE" secondAttribute="trailing" constant="20" id="2KX-ry-AuI"/>
+                            <constraint firstItem="KFp-d6-bRz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nZ-Fh-bMH"/>
+                            <constraint firstItem="Y9P-bq-DaE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BD8-Xf-2e3"/>
+                            <constraint firstItem="Y9P-bq-DaE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jy9-BC-bYh"/>
+                            <constraint firstItem="sGd-c8-2Sh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KN1-bn-aAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sGd-c8-2Sh" secondAttribute="trailing" constant="20" id="MpZ-eu-upJ"/>
+                            <constraint firstItem="5yy-ms-5my" firstAttribute="top" secondItem="KFp-d6-bRz" secondAttribute="bottom" id="VsF-Wb-NSm"/>
+                            <constraint firstItem="KFp-d6-bRz" firstAttribute="top" secondItem="Y9P-bq-DaE" secondAttribute="bottom" constant="20" id="egt-Qk-F7Z"/>
+                            <constraint firstItem="5yy-ms-5my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eko-qd-a9M"/>
+                            <constraint firstItem="sGd-c8-2Sh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uXx-FW-GJd"/>
+                            <constraint firstItem="Y9P-bq-DaE" firstAttribute="top" secondItem="sGd-c8-2Sh" secondAttribute="bottom" constant="20" id="wCt-K3-u0Y"/>
+                            <constraint firstItem="Y9P-bq-DaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysN-l7-FTs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="sGd-c8-2Sh" id="6wa-RP-YiC"/>
+                        <outlet property="firstTF" destination="S1e-02-HeW" id="hzd-sl-std"/>
+                        <outlet property="fourthTF" destination="brp-Gi-Etx" id="4Ii-JN-iWY"/>
+                        <outlet property="secondTF" destination="CyW-da-kNl" id="fAR-Ke-Acv"/>
+                        <outlet property="setCodeButton" destination="KFp-d6-bRz" id="BYk-iO-tJg"/>
+                        <outlet property="thirdTF" destination="AvD-FI-eQg" id="Ope-ah-rgi"/>
+                        <outlet property="verifyCodeButton" destination="5yy-ms-5my" id="TwS-pt-ZlN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
