@@ -16,7 +16,7 @@ An iOS app that imitates Apple's passcode entry to showcase the a single digit U
 1. Works with arbitrary amount of textfields on screen
 
 ## Usages
-1. Copy and paste <a href="https://github.com/zaimramlan/ios-secure-code-entry/blob/release/1.0.0/SecureCodeEntry/Modules/Main/SecureCodeTextField.swift" target="_blank">SecureCodeTextField.swift</a> into your project
+1. Copy and paste <a href="https://github.com/zaimramlan/ios-secure-code-entry/blob/develop/SecureCodeEntry/Modules/Main/SecureCodeTextField.swift" target="_blank">SecureCodeTextField.swift</a> into your project
 1. Set the custom class of the `UITextField`s on your storyboard file to `SecureCodeTextField`
 1. Point the current `SecureCodeTextField`'s `previousTextField` and `nextTextField` to the respective text fields. For example:
     ```swift
@@ -30,4 +30,4 @@ An iOS app that imitates Apple's passcode entry to showcase the a single digit U
 1. Your textfields should now jump to previous/next textfields as desired!
 
 ## More Examples?
-Look into the <a href="https://github.com/zaimramlan/ios-secure-code-entry/blob/release/1.0.0/SecureCodeEntry/Modules/Main/ViewController.swift" target="_blank">ViewController.swift</a> file and you should be able to understand in the scenario where we have 4 `SecureCodeTextFields`s
+Look into the <a href="https://github.com/zaimramlan/ios-secure-code-entry/blob/develop/SecureCodeEntry/Modules/Main/ViewController.swift" target="_blank">ViewController.swift</a> file and you should be able to understand in the scenario where we have 4 `SecureCodeTextFields`s
