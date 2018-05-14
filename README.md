@@ -7,7 +7,7 @@
 
 An iOS app that imitates Apple's passcode entry to showcase the a single digit UITextField custom class; `SecureCodeTextField`.
 
-<p align="center"><img src="https://raw.githubusercontent.com/zaimramlan/ios-secure-code-entry/release/1.0.0/Demo.gif" alt="demo" align="center" width="auto" height="500"/></p>
+<p align="center"><img src="https://github.com/zaimramlan/ios-secure-code-entry/blob/develop/Demo.gif" alt="demo" align="center" width="auto" height="500"/></p>
 
 ## Features
 1. Only allow a single digit per textfield
