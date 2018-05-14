@@ -61,6 +61,7 @@ class ViewController: UIViewController {
         }
         else {
             descriptionLabel.text = incorrectCodeText
+            resetTextFields()
         }
     }
     
