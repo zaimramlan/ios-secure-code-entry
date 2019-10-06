@@ -1,8 +1,8 @@
 # Secure Code Entry
 
-[![IDE](https://img.shields.io/badge/Xcode-9-blue.svg)](https://developer.apple.com/xcode/)
+[![IDE](https://img.shields.io/badge/Xcode-10-blue.svg)](https://developer.apple.com/xcode/)
 [![Platform](https://img.shields.io/badge/platform-iOS%2011-green.svg)](https://developer.apple.com/ios/)
-[![Language](https://img.shields.io/badge/swift-4-orange.svg)](https://swift.org)
+[![Language](https://img.shields.io/badge/swift-5-orange.svg)](https://swift.org)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 An iOS app that imitates Apple's passcode entry to showcase the a single digit UITextField custom class; `SecureCodeTextField`.
@@ -23,9 +23,9 @@ An iOS app that imitates Apple's passcode entry to showcase the a single digit U
     let firstTF = SecureCodeTextField()
     let secondTF = SecureCodeTextField()
     let thirdTF = SecureCodeTextField()
-    
+
     secondTF.previousTextField = firstTF
-    secondTF.nextTextField = thirdTF 
+    secondTF.nextTextField = thirdTF
     ```
 1. Your textfields should now jump to previous/next textfields as desired!
 
