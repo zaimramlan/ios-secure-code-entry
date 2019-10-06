@@ -1,7 +1,7 @@
 # Secure Code Entry
 
 [![IDE](https://img.shields.io/badge/Xcode-10-blue.svg)](https://developer.apple.com/xcode/)
-[![Platform](https://img.shields.io/badge/platform-iOS%2011-green.svg)](https://developer.apple.com/ios/)
+[![Platform](https://img.shields.io/badge/platform-iOS%2013-green.svg)](https://developer.apple.com/ios/)
 [![Language](https://img.shields.io/badge/swift-5-orange.svg)](https://swift.org)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
